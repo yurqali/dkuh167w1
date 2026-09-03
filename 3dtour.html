@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-тур по студии — Fiery Fox</title>
+  <link rel="preload" href="fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <style>
+    :root {
+      --bg: #F6F1EA;
+      --surface: #FFFEFC;
+      --ink: #2E2420;
+      --ink-soft: #7A6B5D;
+      --accent: #7C2F2E;
+      --line: #E4D9CB;
+      --serif: 'Newsreader', Georgia, serif;
+      --sans: 'Manrope', -apple-system, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .tour-bar {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px clamp(16px, 3vw, 28px);
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .tour-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    .back svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .tour-title {
+      min-width: 0;
+    }
+
+    .tour-title h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      font-weight: 500;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tour-title p {
+      font-size: 12px;
+      color: var(--ink-soft);
+      margin-top: 2px;
+    }
+
+    .tour-open {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-radius: 100px;
+      border: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      white-space: nowrap;
+      background: var(--bg);
+    }
+
+    .tour-open:hover {
+      border-color: var(--ink);
+    }
+
+    .tour-frame {
+      flex: 1;
+      min-height: 0;
+      position: relative;
+      background: #1a1412;
+    }
+
+    .tour-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    @media (max-width: 560px) {
+      .tour-title p {
+        display: none;
+      }
+
+      .tour-open {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="tour-bar">
+    <div class="tour-bar-left">
+      <a class="back" href="index.html#gallery">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        Назад
+      </a>
+      <div class="tour-title">
+        <h1>3D-тур по студии</h1>
+        <p>Fiery Fox · ЖК «Ривер Парк»</p>
+      </div>
+    </div>
+    <a class="tour-open" href="https://fieryfoxnails.ru/tour_studiya_fiery_fox_nail_art_house_by_natalya_kaptelina/index.html"
+      target="_blank" rel="noopener">Открыть на весь экран</a>
+  </header>
+
+  <main class="tour-frame">
+    <iframe
+      src="https://fieryfoxnails.ru/tour_studiya_fiery_fox_nail_art_house_by_natalya_kaptelina/index.html"
+      title="3D-тур по студии Fiery Fox"
+      allowfullscreen
+      loading="eager"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+</body>
+
+</html>
