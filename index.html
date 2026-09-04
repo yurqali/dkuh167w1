@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fiery Fox – студия красоты и заботы</title>
   <meta name="description"
@@ -10,9 +10,13 @@
   <meta name="theme-color" content="#7C2F2E">
 
   <link rel="canonical" href="https://fieryfox.ru/">
-  <link rel="icon" href="logos/favicon.ico" sizes="any">
+  <link rel="icon" sizes="any" href="logos/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logos/apple-touch-icon.png">
+  <link rel="preload" href="fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
@@ -34,10 +38,35 @@
     content="Студия красоты в ЖК «Ривер Парк»: маникюр, педикюр, брови, ресницы. м. Нагатинский Затон, ежедневно 10:00–22:00.">
   <meta name="twitter:image" content="https://fieryfox.ru/logos/og-image.jpg">
 
-  <link rel="preload" href="fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Fiery Fox",
+    "url": "https://fieryfox.ru/",
+    "description": "Студия красоты в ЖК «Ривер Парк»: маникюр, педикюр, брови, ресницы и уход за волосами.",
+    "image": "https://fieryfox.ru/logos/og-image.jpg",
+    "logo": "https://fieryfox.ru/logos/logo.png",
+    "telephone": "+74952081121",
+    "email": "info.fiery_fox@mail.ru",
+    "areaServed": "RU",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Корабельная, 17/2",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "22:00"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
@@ -100,7 +129,7 @@
       </div>
     </div>
     <div class="hero-visual">
-      <img src="photos/студия главное фото.jpg" alt="Рабочая зона студии Fiery Fox">
+      <img src="photos/студия главное фото.jpeg" alt="Рабочая зона студии Fiery Fox">
       <div class="hero-swatches">
         <div class="swatch-row">
           <span class="swatch" style="background:#000000"></span>
@@ -117,7 +146,7 @@
   <section class="about" id="about">
     <div class="container about-grid">
       <div class="about-visual">
-        <img src="photos/камин.jpg" alt="Интерьер студии Fiery Fox">
+        <img src="photos/камин.jpeg" alt="Интерьер студии Fiery Fox">
         <div class="about-badge"><b>10:00–22:00</b><span>ежедневно, без выходных</span></div>
       </div>
       <div class="about-content">
